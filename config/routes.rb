@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  get 'user/new'
+
+  root 'staticpages#home'
+  get  'staticpages/home'
+  get  'staticpages/help'
+  get  'staticpages/about'
+  get  'staticpages/contact'
+  get  'user/new'
 end
